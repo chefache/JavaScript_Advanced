@@ -1,10 +1,10 @@
-function solve(numberOne, numberTwo){
-    while (numberTwo != 0) {
-        let temp = numberTwo;
-        numberTwo = numberOne % numberTwo;
-        numberOne = temp;
+function solve(numOne, numTwo){
+    while (numTwo != 0) {
+        let temp = numTwo;
+        numTwo = numOne % numTwo;
+        numOne = temp;
     }
-    return numberOne;
+    return numOne;
 }
 
 console.log(solve(15, 5));
